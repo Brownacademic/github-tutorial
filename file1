@@ -1,1 +1,36 @@
-hello, hi!
+## to be used in gitbash (in windows)
+
+## to assign directory for the github (gh) repository (rep)
+cd desktop ## assign the gh rep to your c drive desktop (the main one)
+cd /D ## assign rep to d drive 
+cd /D/(folder name)/(folder name) ## assign rep to specific folders in d drive 
+
+## to clone the created rep from gh to your desktop
+git clone https://github.com/username/repname ## type the same url address from the address bar of the gh repository
+
+## if you are a new answer, github may ask you to sign into your new github account and run the previous code again. 
+
+cd repname/ ## to set the folder from your desktop (you can check the 
+
+ls ## lists all the files
+-> filename.extension ## git shows the list of files as output 
+
+## if you make changes on the desktop file and want the changes to reflect on your online gh rep - you have to send a push request
+
+## step 1: use git add  command
+git add filename.extension ## this sets the working directory ie. the file we are working on
+
+## step 2: use git commit command
+git commit -m "update filename" ## this set the file into the staging area - making it ready to be cloned to the online rep
+
+## step 3: use git push command
+git push ## this will clone the offline (desktop) file to the online rep, you can check if it's successfully done by refreshing it.
+
+## if you make changes on the online file and want the changes to reflect on your desktop - you have to send a pull request
+
+## step 1: make changes to the gh file online 
+## step 2: select "Commit directly to the main branch."
+## step 3: click on "Commit changes" and og back to gitbash
+
+## step 4: use git pull command
+git pull ## this will reflect the changes in the file on your desktop - check if it is done successfully. 
